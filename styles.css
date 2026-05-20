@@ -1,0 +1,124 @@
+* {
+    --dark-background-color: #1F2937; /* hero; footer */
+    --main-text-color: #F9FAF8; /* hero main text ("this website is awesome"); hero logo text */
+    --secondary-text-color: #E5E7EB; /* hero secondary text; header link text */
+    --accent-text-color: var(--dark-background-color,#1F2937); /* information header text; quote text */
+    --cta-color: #3882F6; /* button color; call to action background color */
+    --light-background-color: var(--secondary-text-color,#E5E7EB); /* quote section background color */
+
+
+    /*
+    hero secondary text, header link text
+    18px
+    
+    hero logo text
+    24px
+    
+    information header text
+    36px weight: 900
+     
+    quote text
+    36px weight: 300 */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+    background-color: var(--dark-background-color, #1F2937);
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+header ul a {
+    color: var(--secondary-text-color, #E5E7EB);
+    text-decoration: none;
+}
+
+.hero {
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: var(--dark-background-color, #1F2937);
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--main-text-color, #F9FAF8);
+    font-weight: 900;
+}
+
+button {
+    background-color: var(--cta-color, #3882F6);
+    color: var(--main-text-color, #F9FAF8);
+    padding: 8px 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+}
+
+ main {
+    flex-grow: 1;
+ }
+
+main > article {
+    padding: 100px;
+}
+
+ #quote {
+    background-color: var(--light-background-color,#E5E7EB);
+}
+
+#cta > div {
+    background-color: var(--cta-color, #3882F6);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#cta h3 {
+    color: var(--main-text-color, #F9FAF8);
+}
+
+#cta p {
+    color: var(--secondary-text-color, #E5E7EB);
+}
+
+#cta button {
+    border: 1px solid var(--main-text-color, #F9FAF8);
+
+}
+
+ footer {
+    background-color: var(--dark-background-color, #1F2937);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-text-color, #E5E7EB);
+ }
