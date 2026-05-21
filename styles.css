@@ -1,28 +1,17 @@
 * {
+    box-sizing: border-box;
+
     --dark-background-color: #1F2937; /* hero; footer */
     --main-text-color: #F9FAF8; /* hero main text ("this website is awesome"); hero logo text */
     --secondary-text-color: #E5E7EB; /* hero secondary text; header link text */
     --accent-text-color: var(--dark-background-color,#1F2937); /* information header text; quote text */
     --cta-color: #3882F6; /* button color; call to action background color */
     --light-background-color: var(--secondary-text-color,#E5E7EB); /* quote section background color */
-
-
-    /*
-    hero secondary text, header link text
-    18px
-    
-    hero logo text
-    24px
-    
-    information header text
-    36px weight: 900
-     
-    quote text
-    36px weight: 300 */
 }
 
 body {
     min-height: 100vh;
+    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -37,6 +26,12 @@ header {
     gap: 2em;
     padding: 1em;
     background-color: var(--dark-background-color, #1F2937);
+}
+
+header #logo {
+    font-size: 24px;
+    color: var(--main-text-color, #F9FAF8);
+    margin: 0;
 }
 
 header img {
@@ -55,6 +50,7 @@ header ul {
 header ul a {
     color: var(--secondary-text-color, #E5E7EB);
     text-decoration: none;
+    font-size: 18px;
 }
 
 .hero {
@@ -66,10 +62,15 @@ header ul a {
     background-color: var(--dark-background-color, #1F2937);
 }
 
-h1 {
+.hero h1 {
     font-size: 48px;
     color: var(--main-text-color, #F9FAF8);
     font-weight: 900;
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--secondary-text-color, #E5E7EB);
 }
 
 button {
@@ -89,33 +90,76 @@ main > article {
     padding: 100px;
 }
 
- #quote {
+main #information h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--accent-text-color,#1F2937);
+    text-align: center;
+}
+
+main #information div {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+main #information div figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 1em;
+    color: var(--accent-text-color,#1F2937);
+}
+
+main #information div img {
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
+
+main #quote {
     background-color: var(--light-background-color,#E5E7EB);
 }
 
-#cta > div {
+main #quote blockquote {
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--accent-text-color,#1F2937);
+    margin: 36px 0;
+}
+
+main #quote q {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+main #cta > div {
     background-color: var(--cta-color, #3882F6);
     padding: 20px;
     border-radius: 10px;
+    max-width: 1000px;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#cta h3 {
+main #cta h3 {
     color: var(--main-text-color, #F9FAF8);
 }
 
-#cta p {
+main #cta p {
     color: var(--secondary-text-color, #E5E7EB);
 }
 
-#cta button {
+main #cta button {
     border: 1px solid var(--main-text-color, #F9FAF8);
 
 }
 
- footer {
+footer {
     background-color: var(--dark-background-color, #1F2937);
     display: flex;
     justify-content: center;
