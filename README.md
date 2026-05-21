@@ -16,3 +16,10 @@ Don’t forget to commit early & often! You can [reference the Commit Message le
 
 **Viewing your project on the web**
 To share your website with others, you’ll need to deploy it using GitHub Pages. The full instructions for this process can be found in the [Recipes project](https://www.theodinproject.com/lessons/foundations-recipes#viewing-your-project-on-the-web) lesson.
+
+### Image Source
+* Banana: [freddy dendoktoor](https://www.publicdomainpictures.net/en/view-image.php?image=624600&picture=fruit-food-banana-cut-out-png), CC0 1.0
+* Strawberry: [freddy dendoktoor](https://www.publicdomainpictures.net/en/view-image.php?image=624181&picture=fruit-food-strawberry-cut-out-png), CC0 1.0
+* Apple: [Roboflow, Inc.](https://universe.roboflow.com/ai-and-machine-learning-8se6h/fruit-detection-model-mtegr), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Resized.
+* Kiwi: [Keledjian Alexandre](https://commons.wikimedia.org/wiki/File:Macro_image_of_cross-section_of_a_kiwifruit.png), CC BY-SA 3.0. Resized.
+* Croc: [freepng](https://commons.wikimedia.org/wiki/File:1-2-crocodile-free-png-image.png), CC BY-SA 4.0. Resized.
