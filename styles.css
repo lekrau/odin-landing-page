@@ -56,7 +56,7 @@ header ul a {
 .hero {
     padding: 5em;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2em;
@@ -80,8 +80,15 @@ header ul a {
 }
 
 .hero-img {
-    /* min-width: 620px; */
+    min-width: 620px;
     max-width: 700px;
+    min-height: 150px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/57/1-2-crocodile-free-png-image.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* padding: 0 2em; */
+    /* For small viewport widths, the image sticks directly to the edge. */
 }
 
 button {
@@ -96,8 +103,9 @@ button {
 img {
     max-inline-size: 100%;
     display: block;
-    object-fit: contain;
+    /* object-fit: contain; */
     /* object-fit: cover; */
+    /* object-attachment: fixed; */
     /* width: 900px; */
 }
 
