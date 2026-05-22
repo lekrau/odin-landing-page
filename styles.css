@@ -11,7 +11,7 @@
 
 body {
     min-height: 100vh;
-    /* width: 100vw; */
+    width: 100vw;
     display: flex;
     flex-direction: column;
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -56,21 +56,32 @@ header ul a {
 .hero {
     padding: 5em;
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     gap: 2em;
     background-color: var(--dark-background-color, #1F2937);
 }
 
-.hero h1 {
+.hero-text {
+    max-width: 350px;
+    flex-shrink: 1;
+}
+
+.hero-text h1 {
     font-size: 48px;
     color: var(--main-text-color, #F9FAF8);
     font-weight: 900;
 }
 
-.hero p {
+.hero-text p {
     font-size: 18px;
     color: var(--secondary-text-color, #E5E7EB);
+}
+
+.hero-img {
+    /* min-width: 620px; */
+    max-width: 700px;
 }
 
 button {
@@ -80,6 +91,14 @@ button {
     font-weight: bold;
     border-radius: 8px;
     border: none;
+}
+
+img {
+    max-inline-size: 100%;
+    display: block;
+    object-fit: contain;
+    /* object-fit: cover; */
+    /* width: 900px; */
 }
 
  main {
