@@ -140,39 +140,16 @@ main #information h2 {
     flex-basis: 300px;
 }
 
-/* main #information div img {
-    border-radius: 10px;
+#information img {
     width: 300px;
     height: auto;
-} */
-
-.img {
-    /* flex-basis: 300px; */
-    background-position: center center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    aspect-ratio: 1 / 1;
-    border: 2px solid var(--cta-color, #3882F6);
+    padding: 20px;
     border-radius: 10px;
+    border: 2px solid var(--cta-color, #3882F6);
 }
 
-.img.one {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fe/Macro_image_of_cross-section_of_a_kiwifruit.png);
-    background-size: 85% auto;
-}
-
-.img.two {
-    background-image: url(https://source.roboflow.com/TyPzs13Gp5Nb39BESovVgHj58H72/0GRdvKECCiAcL9cLMJ4C/original.jpg);
-    background-size: 190% auto;
-}
-
-.img.three {
-    background-image: url(https://www.publicdomainpictures.net/pictures/630000/velka/fruit-food-banana-cut-out-png.png);
-    background-size: 140% auto;
-}
-
-.img.four {
-    background-image: url(https://www.publicdomainpictures.net/pictures/630000/velka/fruit-food-strawberry-cut-out-png.png);
+#information #banana{
+    padding: 0;
 }
 
 main #quote {
