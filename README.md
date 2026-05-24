@@ -6,7 +6,7 @@ The goal of this project was to recreate a provided landing page design from scr
 
 ## Live Demo
 
-Coming soon.
+[View live site](https://lekrau.github.io/odin-landing-page/)
 
 ## Built with
 
