@@ -97,6 +97,12 @@ button {
     font-weight: bold;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--main-text-color, #F9FAF8);
+    color: var(--cta-color, #3882F6);
 }
 
  main {
