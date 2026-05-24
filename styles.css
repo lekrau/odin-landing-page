@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
+}
 
+:root {
     --dark-background-color: #1F2937; /* hero; footer */
     --main-text-color: #F9FAF8; /* hero main text ("this website is awesome"); hero logo text */
     --secondary-text-color: #E5E7EB; /* hero secondary text; header link text */
@@ -11,7 +13,6 @@
 
 body {
     min-height: 100vh;
-    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -119,7 +120,7 @@ main #information h2 {
     gap: 2em;
 }
 
-#information figure {
+.info-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +150,7 @@ main #quote-container {
     margin: auto;
 }
 
-main #quote blockquote {
+.quote-text {
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
@@ -164,7 +165,7 @@ main #quote q {
     font-size: 1.2em;
 }
 
-main #cta > div {
+.cta-box {
     background-color: var(--cta-color, #3882F6);
     padding: 20px;
     border-radius: 10px;
