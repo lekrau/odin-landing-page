@@ -103,10 +103,6 @@ button {
 img {
     max-inline-size: 100%;
     display: block;
-    /* object-fit: contain; */
-    /* object-fit: cover; */
-    /* object-attachment: fixed; */
-    /* width: 900px; */
 }
 
  main {
@@ -141,7 +137,6 @@ main #information h2 {
 }
 
 #information img {
-    width: 300px;
     height: auto;
     padding: 20px;
     border-radius: 10px;
