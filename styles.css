@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 2em;
-    padding: 1em;
+    padding: 1em 5em;
     background-color: var(--dark-background-color, #1F2937);
 }
 
@@ -57,7 +57,7 @@ header ul a {
     padding: 5em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2em;
     background-color: var(--dark-background-color, #1F2937);
@@ -80,29 +80,22 @@ header ul a {
 }
 
 .hero-img {
-    min-width: 620px;
-    max-width: 700px;
-    min-height: 150px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/57/1-2-crocodile-free-png-image.png");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* padding: 0 2em; */
-    /* For small viewport widths, the image sticks directly to the edge. */
-}
-
-button {
-    background-color: var(--cta-color, #3882F6);
-    color: var(--main-text-color, #F9FAF8);
-    padding: 8px 10px;
-    font-weight: bold;
-    border-radius: 8px;
-    border: none;
+    max-width: 775px;
 }
 
 img {
     max-inline-size: 100%;
     display: block;
+    height: auto;
+}
+
+button {
+    background-color: var(--cta-color, #3882F6);
+    color: var(--main-text-color, #F9FAF8);
+    padding: 5px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
 }
 
  main {
@@ -133,11 +126,11 @@ main #information h2 {
     margin: 0;
     gap: 1em;
     color: var(--accent-text-color,#1F2937);
-    flex-basis: 300px;
+    flex-basis: 150px;
+    text-align: center;
 }
 
 #information img {
-    height: auto;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid var(--cta-color, #3882F6);
@@ -151,9 +144,15 @@ main #quote {
     background-color: var(--light-background-color,#E5E7EB);
 }
 
+main #quote-container {
+    max-width: 830px;
+    margin: auto;
+}
+
 main #quote blockquote {
     font-size: 36px;
     font-weight: 300;
+    font-style: italic;
     color: var(--accent-text-color,#1F2937);
     margin: 36px 0;
 }
@@ -186,7 +185,6 @@ main #cta p {
 
 main #cta button {
     border: 1px solid var(--main-text-color, #F9FAF8);
-
 }
 
 footer {
@@ -195,4 +193,5 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--secondary-text-color, #E5E7EB);
+    padding: 20px 0;
  }
